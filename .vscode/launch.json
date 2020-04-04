@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Split Demo",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\APEXVersionControlUtil.js",
+            "args": ["split", "Demo\\f105972.sql"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Merge Demo",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\APEXVersionControlUtil.js",
+            "args": ["merge", "Demo\\f105972.split.sql"]
+        }
+    ]
+}

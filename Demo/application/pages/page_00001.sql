@@ -1,0 +1,52 @@
+prompt --application/pages/page_00001
+begin
+wwv_flow_api.create_page(
+ p_id=>1
+,p_user_interface_id=>wwv_flow_api.id(25850780696402701559)
+,p_name=>'Home'
+,p_alias=>'HOME'
+,p_step_title=>'Playground'
+,p_autocomplete_on_off=>'OFF'
+,p_javascript_code=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'var testFunc = function() {',
+'    alert(''Parent JS'');',
+'}'))
+,p_page_template_options=>'#DEFAULT#'
+,p_last_updated_by=>'OFFICE@RAMMELHOF.AT'
+,p_last_upd_yyyymmddhh24miss=>'20200311083906'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(25850791513705701586)
+,p_plug_name=>'Playground'
+,p_icon_css_classes=>'app-icon'
+,p_region_template_options=>'#DEFAULT#'
+,p_escape_on_http_output=>'Y'
+,p_plug_template=>wwv_flow_api.id(25850687802944701481)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_plug_query_num_rows=>15
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+,p_attribute_03=>'Y'
+);
+wwv_flow_api.create_page_da_event(
+ p_id=>wwv_flow_api.id(29697957314925815427)
+,p_name=>'OnParentDA'
+,p_event_sequence=>10
+,p_triggering_element_type=>'JAVASCRIPT_EXPRESSION'
+,p_triggering_element=>'document'
+,p_bind_type=>'bind'
+,p_bind_event_type=>'custom'
+,p_bind_event_type_custom=>'ParentDA'
+);
+wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(29697957415942815428)
+,p_event_id=>wwv_flow_api.id(29697957314925815427)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_JAVASCRIPT_CODE'
+,p_attribute_01=>'alert(''Hello APEX world'');'
+);
+end;
+/
