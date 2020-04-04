@@ -1,16 +1,17 @@
-Usage: node APEXVersionControlUtil.js command file
+Usage: ```node APEXVersionControlUtil.js command file```
 
 Commands: 
 * split: Splits a Oracle APEX application export file into partial sql files and a summary sql file referencing all artifacts.
-    * Example: node APEXVersionControlUtil.js split Demo\f105972.sql  
+    * Example: ```node APEXVersionControlUtil.js split Demo\f105972.sql```  
         will generate a summary file Demo\f105972.split.sql  
         and artifacts in the folder Demo\application  
 * merge: Merges splitted files into the original Oracle APEX application export file.
-    * Example: node APEXVersionControlUtil.js split Demo\f105972.split.sql  
+    * Example: ```node APEXVersionControlUtil.js split Demo\f105972.split.sql```  
         will merge the files referenced in Demo\f105972.split.sql  
         into Demo\f105972.sql
 
-## What can that be used for?
+What can that be used for?
+================================
 
 Oracle APEX exports an application into one single file containting sql statements to generate the application in database.  
 This file is not very readable in case we want to track changes and maybe rollback single page changes.  
