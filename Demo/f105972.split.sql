@@ -115,6 +115,7 @@
 @@application/pages/page_01030.sql
 @@application/pages/page_01100.sql
 @@application/pages/page_09999.sql
+@@application/pages/page_99999.sql
 @@application/deployment/definition.sql
 @@application/deployment/checks.sql
 @@application/deployment/buildoptions.sql

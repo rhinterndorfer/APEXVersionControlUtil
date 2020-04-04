@@ -9,7 +9,7 @@ wwv_flow_api.create_page(
 ,p_page_template_options=>'#DEFAULT#'
 ,p_protection_level=>'D'
 ,p_last_updated_by=>'OFFICE@RAMMELHOF.AT'
-,p_last_upd_yyyymmddhh24miss=>'20200312150013'
+,p_last_upd_yyyymmddhh24miss=>'20200404092644'
 );
 wwv_flow_api.create_page_da_event(
  p_id=>wwv_flow_api.id(26262055804048531029)
@@ -28,7 +28,7 @@ wwv_flow_api.create_page_da_action(
 ,p_attribute_01=>'sunrise-1756274_1920.jpg'
 ,p_attribute_02=>'earth-1149733_1920.jpg'
 ,p_attribute_05=>'black'
-,p_attribute_06=>'0.5'
+,p_attribute_06=>'0.6'
 ,p_attribute_08=>'Y'
 ,p_attribute_09=>'Y'
 );
