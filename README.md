@@ -1,3 +1,5 @@
+APEX Version Control Util
+================================
 Usage: ```node APEXVersionControlUtil.js command file```
 
 Commands: 
@@ -10,6 +12,9 @@ Commands:
         will merge the files referenced in Demo\f105972.split.sql  
         into Demo\f105972.sql
 
+If you like my stuff, donate me a coffee  
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/rhinterndorfer)
+
 What can that be used for?
 ================================
 
@@ -21,3 +26,6 @@ If we want to rollback only one change in a single page we can to this by revert
 But also for tracking changes per page it is very helpfull to split the large file into smaller aritfacts.
 
 In the Demo folder you can see a splitted demo application and the artifacts created by a split.
+
+Example: Change in page 0
+![Screenshot](Doc/Images/Git_Page_Change.png)
